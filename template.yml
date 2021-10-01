@@ -4,6 +4,37 @@ description: A template for testing Flourish
 author: Flourish team
 sdk_version: 3
 settings:
+  - property: boolean
+    name: Boolean
+    type: boolean
+  - property: color
+    name: Color
+    type: color
+  - property: colors
+    name: Colors
+    type: colors
+  - property: number
+    name: Number
+    type: number
+  - property: string
+    name: String
+    type: string
+  - property: choice
+    name: Choice
+    type: string
+    choices:
+      - [Choice A, choice_a]
+      - [Choice B, choice_b]
+      - [Choice C, choice_c]
+  - property: text
+    name: Text
+    type: text
+  - property: font
+    name: Font
+    type: font
+  - property: url
+    name: URL
+    type: url
 data:
   - Sheet A
   - dataset: sheet_a

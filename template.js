@@ -1,6 +1,16 @@
 const data = {};
 
-const state = {};
+const state = {
+	boolean: true,
+	color: "#FF0000",
+	colors: ["#FF0000", "#00FF00", "#0000FF"],
+	number: 42,
+	string: "Hello world",
+	choice: "choice_a",
+	text: "since feeling is first\nwho pays any attention\nto the syntax of things\nwill never wholly kiss you;",
+	font: { name: "Playfair Display", url: "https://fonts.googleapis.com/css?family=Playfair+Display:400,700" },
+	url: "https://app.flourish.studio/image/logo.png"
+};
 
 function updateDataTables() {
 	for (const [name, dataset] of Object.entries(data)) {
@@ -43,12 +53,31 @@ function updateWindowFlourish() {
 	}
 }
 
+function updateSettings() {
+	const settings_list = document.createElement("dl");
+	for (const [key, value] of Object.entries(state)) {
+		const term = document.createElement("dt");
+		term.textContent = key;
+		const definition = document.createElement("dd");
+		settings_list.appendChild(term);
+		const pre = document.createElement("pre");
+		const code = document.createElement("code");
+		code.textContent = JSON.stringify(value);
+		pre.appendChild(code);
+		definition.appendChild(pre);
+		settings_list.appendChild(definition);
+	}
+
+	document.querySelector(".settings-list-container").replaceChildren(settings_list);
+}
+
 function draw() {
 	update();
 }
 
 function update() {
 	updateDataTables();
+	updateSettings();
 	updateWindowFlourish();
 }
 
