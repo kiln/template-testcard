@@ -18,11 +18,11 @@ function updateDataTables() {
 		const table = document.createElement("table");
 		const table_head = document.createElement("tr");
 		for (const columns of Object.values(column_names)) {
-				for (const column of [columns].flat()) {
-					const cell = document.createElement("th");
-					cell.textContent = column;
-					table_head.appendChild(cell);
-				}
+			for (const column of [columns].flat()) {
+				const cell = document.createElement("th");
+				cell.textContent = column;
+				table_head.appendChild(cell);
+			}
 		}
 		table.appendChild(table_head);
 
