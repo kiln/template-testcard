@@ -1,0 +1,13 @@
+{
+  "name": "testcard",
+  "version": "1.0.0",
+  "description": "A template for testing Flourish",
+  "main": "template.js",
+  "author": "Flourish team",
+  "license": "UNLICENSED",
+  "keywords": [
+    "flourish"
+  ],
+  "scripts": {},
+  "dependencies": {}
+}

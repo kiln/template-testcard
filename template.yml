@@ -1,0 +1,28 @@
+id: testcard
+name: Testcard
+description: A template for testing Flourish
+author: Flourish team
+sdk_version: 3
+settings:
+data:
+  - Sheet A
+  - dataset: sheet_a
+    key: single_column
+    name: Single column
+    type: column
+    column: "SheetA::A"
+  - dataset: sheet_a
+    key: multiple_columns
+    name: Multiple columns
+    type: columns
+    columns: "SheetA::B-C"
+  - dataset: sheet_b
+    key: single_column
+    name: Single column
+    type: column
+    column: "SheetB::A"
+  - dataset: sheet_b
+    key: multiple_columns
+    name: Multiple columns
+    type: columns
+    columns: "SheetB::B-C"
