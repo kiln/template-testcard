@@ -35,12 +35,21 @@ function updateDataTables() {
 	}
 }
 
+function updateWindowFlourish() {
+	const fields = ["environment", "is_read_only", "fixed_height"];
+	for (const field of fields) {
+		const item = document.querySelector(`.win-fl-item-${field.replaceAll("_", "-")}`);
+		item.textContent = window.Flourish[field];
+	}
+}
+
 function draw() {
 	update();
 }
 
 function update() {
 	updateDataTables();
+	updateWindowFlourish();
 }
 
 window.template = {
