@@ -15,9 +15,10 @@ const state = {
 function updateDataTables() {
 	for (const [name, dataset] of Object.entries(data)) {
 		const {column_names} = dataset;
+		const {single_column, multiple_columns} = column_names;
 		const table = document.createElement("table");
 		const table_head = document.createElement("tr");
-		for (const columns of Object.values(column_names)) {
+		for (const columns of [single_column, multiple_columns]) {
 			for (const column of [columns].flat()) {
 				const cell = document.createElement("th");
 				cell.textContent = column;
@@ -28,7 +29,7 @@ function updateDataTables() {
 
 		for (const row of dataset) {
 			const table_row = document.createElement("tr");
-			for (const column_name of Object.keys(column_names)) {
+			for (const column_name of ["single_column", "multiple_columns"]) {
 				const values = row[column_name];
 				for (const value of [values].flat()) {
 					const cell = document.createElement("td");
