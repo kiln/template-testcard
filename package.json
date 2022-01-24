@@ -4,7 +4,7 @@
   "description": "A template for testing Flourish",
   "main": "template.js",
   "author": "Flourish team",
-  "license": "UNLICENSED",
+  "license": "BSD-3-Clause",
   "keywords": [
     "flourish"
   ],
