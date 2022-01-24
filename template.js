@@ -72,7 +72,49 @@ function updateSettings() {
 	document.querySelector(".settings-list-container").replaceChildren(settings_list);
 }
 
+function addActionListeners() {
+	document.querySelector(".action-set-height-fixed").addEventListener("click", () => {
+		window.Flourish.setHeight(500);
+	});
+
+	document.querySelector(".action-set-height-null").addEventListener("click", () => {
+		window.Flourish.setHeight(null);
+	});
+
+	document.querySelector(".action-set-height-incorrect").addEventListener("click", () => {
+		window.Flourish.setHeight("Incorrect value");
+	});
+
+	document.querySelector(".action-upload-image-correct").addEventListener("click", () => {
+		window.Flourish.uploadImage({ name: "url" });
+	});
+
+	document.querySelector(".action-upload-image-incorrect").addEventListener("click", () => {
+		window.Flourish.uploadImage("Incorrect value");
+	});
+
+	document.querySelector(".action-warn-correct").addEventListener("click", () => {
+		window.Flourish.warn({
+			message: "Testcard template warning",
+			explanation: "Testcard template warning explanation"
+		});
+	});
+
+	document.querySelector(".action-warn-incorrect").addEventListener("click", () => {
+		window.Flourish.warn({ message: [] });
+	});
+
+	document.querySelector(".action-set-setting-correct").addEventListener("click", () => {
+		window.Flourish.setSetting("string", "Changed setting");
+	});
+
+	document.querySelector(".action-set-setting-incorrect").addEventListener("click", () => {
+		window.Flourish.setSetting([], {});
+	});
+}
+
 function draw() {
+	addActionListeners();
 	update();
 }
 
