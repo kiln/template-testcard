@@ -1,3 +1,6 @@
+# 1.0.3
+* Add HTML with editor setting
+
 # 1.0.2
 * Put the settings in a settings block
 

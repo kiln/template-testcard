@@ -27,9 +27,14 @@ settings:
       - [Choice A, choice_a]
       - [Choice B, choice_b]
       - [Choice C, choice_c]
-  - property: text
-    name: Text
-    type: text
+  - property: html_with_editor
+    name: HTML with editor
+    type: html
+    editor:
+      style: true
+      url: true
+      flourish_embed: true
+      bindings: true
   - property: font
     name: Font
     type: font
