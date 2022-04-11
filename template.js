@@ -8,6 +8,7 @@ const state = {
 	string: "Hello world",
 	choice: "choice_a",
 	text: "since feeling is first\nwho pays any attention\nto the syntax of things\nwill never wholly kiss you;",
+	html_with_editor: "<h1>Heading one</h1>",
 	font: { name: "Playfair Display", url: "https://fonts.googleapis.com/css?family=Playfair+Display:400,700" },
 	url: "https://app.flourish.studio/image/logo.png"
 };
