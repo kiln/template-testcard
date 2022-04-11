@@ -4,6 +4,7 @@ description: A template for testing Flourish
 author: Flourish team
 sdk_version: 3
 settings:
+  - Sample settings block
   - property: boolean
     name: Boolean
     type: boolean
