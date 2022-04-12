@@ -1,3 +1,6 @@
+# 1.0.4
+* Make the cells in the data sheets all unique
+
 # 1.0.3
 * Add HTML with editor setting
 
