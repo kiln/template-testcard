@@ -1,3 +1,6 @@
+# 1.0.5
+* Add a thumbnail
+
 # 1.0.4
 * Make the cells in the data sheets all unique
 
