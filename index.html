@@ -8,49 +8,37 @@
 	<body>
 		<main>
 			<section>
-				<h1>Data</h1>
 				<section>
-					<h2>Sheet A</h2>
-					<div class="table-container table-container-sheet-a">
-					</div>
+					<h2>Inline style</h2>
+					<div style="height: 100px; background: url('https://public.flourish.studio/uploads/1559655/a3b0e672-81c4-4be3-b146-ffb8326adcae.jpg')"></div>
+					<p>Multiple images</p>
+					<div style="height: 100px; background-image:
+					url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-left.svg),
+					url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-top-right.svg),
+					url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-right.svg),
+					url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/angles-bottom-left.svg);
+					background-position:
+    					top 10px left 10px,
+						top 10px right 10px,
+						bottom 10px right 10px,
+						bottom 10px left 10px;
+  						background-size: 43px;
+  						background-repeat: no-repeat;"></div>
+					<p>Relative path in stylesheet</p>
+					<div class="background-image-3"></div>
+					<p>404</p>
+					<div style="height:100px; background-image: url('I-do-not-exist.jpg');"></div>
 				</section>
-				<section>
-					<h2>Sheet B</h2>
-					<div class="table-container table-container-sheet-b">
-					</div>
-				</section>
-                <section>
-                    <h2>SVG</h2>
-                    <svg viewBox="0 0 20 10" xmlns="http://www.w3.org/2000/svg">
-                        <line x1="0" y1="0" x2="20" y2="10" stroke="black" />
-                    </svg>
-                </section>
 			</section>
 			<section>
-				<h1>Settings</h1>
-				<div class="settings-list-container"></div>
-			</section>
-			<section>
-				<h1>window.Flourish</h1>
-				<dl>
-					<dt>environment</dt>
-					<dd class="win-fl-item win-fl-item-environment"></dd>
-					<dt>is_read_only</dt>
-					<dd class="win-fl-item win-fl-item-is-read-only"></dd>
-					<dt>fixed_height</dt>
-					<dd class="win-fl-item win-fl-item-fixed-height"></dd>
-				</dl>
-
 				<section>
-					<button class="action-set-height-fixed">setHeight fixed</button>
-					<button class="action-set-height-null">setHeight null</button>
-					<button class="action-set-height-incorrect">setHeight incorrect</button>
-					<button class="action-upload-image-correct">uploadImage correct</button>
-					<button class="action-upload-image-incorrect">uploadImage incorrect</button>
-					<button class="action-warn-correct">warn correct</button>
-					<button class="action-warn-incorrect">warn incorrect</button>
-					<button class="action-set-setting-correct">setSetting correct</button>
-					<button class="action-set-setting-incorrect">setSetting incorrect</button>
+					<h2>From stylesheet</h2>
+					<div class="background-image"></div>
+					<div class="background-image-2"></div>
+					<p>Multiple images</p>
+					<div class="background-image-multi"></div>
+					<p>404 Error from stylesheet</p>
+					<div class="404-bg-image"></div>
 				</section>
 			</section>
 		</main>

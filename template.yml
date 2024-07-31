@@ -1,5 +1,5 @@
-id: testcard
-name: Testcard
+id: image_testcard
+name: Image Testcard
 description: A template for testing Flourish
 author: Flourish team
 sdk_version: 3

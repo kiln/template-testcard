@@ -115,14 +115,14 @@ function addActionListeners() {
 }
 
 function draw() {
-	addActionListeners();
-	update();
+	// addActionListeners();
+	// update();
 }
 
 function update() {
-	updateDataTables();
-	updateSettings();
-	updateWindowFlourish();
+	// updateDataTables();
+	// updateSettings();
+	// updateWindowFlourish();
 }
 
 window.template = {
