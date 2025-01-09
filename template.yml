@@ -53,6 +53,12 @@ data:
     name: Multiple columns
     type: columns
     columns: "SheetA::B-C"
+  - dataset: sheet_a
+    key: image_url
+    name: Image URL
+    type: column
+    column: "SheetA::D"
+    optional: true
   - dataset: sheet_b
     key: single_column
     name: Single column
