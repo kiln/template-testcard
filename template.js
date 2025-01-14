@@ -47,6 +47,10 @@ function updateDataTables() {
 	}
 }
 
+function updateImage() {
+	document.querySelector("#test-image").src = data['sheet_a'][0]['image_url'] || 'https://placehold.co/460x276';
+}
+
 function updateWindowFlourish() {
 	const fields = ["environment", "is_read_only", "fixed_height"];
 	for (const field of fields) {
@@ -123,6 +127,7 @@ function update() {
 	updateDataTables();
 	updateSettings();
 	updateWindowFlourish();
+	updateImage();
 }
 
 window.template = {
